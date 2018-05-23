@@ -1,1 +1,0 @@
-<h3>Wachtwoord wijzigen</h3>

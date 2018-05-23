@@ -1,5 +1,0 @@
-RewriteEngine On
-
-# RewriteRule ^(css|js)/(.+)$ $1/$2 [L]
-RewriteRule ^(recover|activate|signup)/([a-zA-Z0-9]+)/$ index.php?page=$1&id=$2 [L]
-RewriteRule ^(signin|lost|resend)/$ index.php?page=$1 [L]

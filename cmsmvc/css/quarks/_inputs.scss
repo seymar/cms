@@ -1,0 +1,11 @@
+@import '../utilities/border-radius';
+
+input[type="text"], input[type="password"], input[type="email"] {
+	padding:  0 5px;
+	
+	border: 1px solid #ccc;
+	@include border-radius(3px);
+	
+	background: -webkit-gradient(linear,0% 0%,0% 15%,from(#efefef),to(#ffffff));
+	background: -moz-linear-gradient(0% 15% 90deg,#fefefe,#efefef);
+}

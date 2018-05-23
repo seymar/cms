@@ -1,0 +1,11 @@
+@import '../utilities/border-radius';
+
+.button {
+	padding: 3px 8px;
+	
+	border: 1px solid #bbb;
+	@include border-radius(11px);
+	
+	background: -webkit-gradient(linear,0% 100%,0% 0%,from(#f0f0f0),to(#fefefe));
+	background: -moz-linear-gradient(100% 100% 90deg,#f0f0f0,#fefefe);
+}
