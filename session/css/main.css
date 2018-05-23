@@ -1,0 +1,202 @@
+/* MAIN */
+* {
+	margin:0;
+	padding:0;
+	outline:none; }
+
+body {
+	background: #e6eaef url('../../img/background.png');
+	color:#2d2d2d;
+	
+	font-family:'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
+	-webkit-font-smoothing:antialiased; }
+
+.noticer {
+	margin: 15px 15px 0 15px;
+	margin-bottom: 15px;
+	padding:8px 10px;
+	border:1px solid transparent;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	
+	font-size:13px;
+	opacity:1; }
+	.noticer.disabled {
+		margin:0;
+		padding:0px 10px;
+		border-color:transparent;
+		opacity:0; }
+		.noticer.busy {
+			border-color:#dddd55;
+			background-color:#fefedf;
+		}
+		.noticer.error {
+			border-color:#dd5555;
+			background-color:#fedfdf;
+		}
+		.noticer.succes {
+			border-color:#55dd55;
+			background-color:#dffedf;
+		}
+		#noticer form {
+			display: inline !important;
+		}
+
+#container {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -166px;
+	width:300px;
+	/*box-shadow: 0 0 50px #aaaaaa;*/
+}
+	#wrapper > * {
+		/* margin-left:-15px; */
+	}
+	
+/* A #1c96fb */
+
+a {
+	color:#666666;
+	text-decoration:none;
+	text-shadow:#ffffff 1px 1px 1px;
+	font-size:14px;
+	-webkit-transition: color 100ms linear;
+	-moz-transition: color 100ms linear; }
+	#header h1 a {
+		color: #666666;
+		font-weight:normal;
+		font-size:32px; }
+		#header h1 a span {
+			color: #1c96fb;
+			font-weight:bold;
+		}
+		
+	#header #navigation a, #footer a {
+		font-weight:bold; }
+	
+	#wrapper a {
+		color:#1c96fb;
+		font-size:13px; }
+	#wrapper a:hover, a:hover {
+		color:#484848; }
+	#footer a {
+		margin:0;
+		padding:0;
+		font-size:inherit; }
+		
+/* HEADER */
+#header {
+	
+	padding: 15px;
+	width: 300px;
+	height: 30px;
+	border-bottom: 1px solid #cecece;
+	border-radius: 8px 8px 0 0;
+	background: #efefef;
+	
+	text-align: center;
+}
+	h1 {
+		clear:both;
+		padding-top:5px;
+	}
+	#navigation {
+		float:right; }
+		#navigation ul {
+			list-style-type:none; }
+			#navigation ul li {
+				float:left;
+				padding:20px 0px 5px 20px; }
+				
+/* SECTION */
+#wrapper {
+	display: inline-block;
+	margin-bottom: 5px;
+	width: 330px;
+	border:1px solid #cecece;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	background-color:#ffffff;
+	
+	font-size:13px;
+	line-height:20px; }
+	#content {
+		margin: 15px;
+	}
+		#content h3 {
+			margin-bottom:5px;
+			color:#1c96fb;
+		}
+		form label {
+			display:inline-block;
+			color:#3f3f3f;
+		
+			font-weight:bold; }
+			form label input {
+				margin-top:5px;
+				margin-bottom:15px;
+				padding:0 5px;
+				width:288px;
+				height:30px;
+				border:1px solid #cccccc;
+				-moz-border-radius:3px;
+				border-radius:3px;
+				background:-webkit-gradient(linear,0% 0%,0% 15%,from(#efefef),to(#ffffff));
+				background:-moz-linear-gradient(0% 15% 90deg,#fefefe,#efefef);
+				color:#555555;
+			
+				font-size:14px;
+			}
+		form input[type='submit'] {
+			float:right;
+			margin-bottom: 15px;
+			padding:3px 8px;
+			min-width:80px;
+			border:1px solid #bbbbbb;
+			-moz-border-radius:11px;
+			border-radius:11px;
+			background:-webkit-gradient(linear,0% 100%,0% 0%,from(#f0f0f0),to(#fefefe));
+			background:-moz-linear-gradient(100% 100% 90deg,#f0f0f0,#fefefe);
+			color:#464646;
+			
+			font-size:11px;
+			-webkit-transition:all 100ms linear; }
+			form input[type='submit']:hover {
+				border-color:#464646;
+				color:#000000;
+				cursor:pointer;
+			}
+			form input[type="submit"]:active {
+				outline:none;
+				background:-webkit-gradient(linear,0% 100%, 0% 0%,from(#f0f0f0),to(#e0e0e0));
+				background:-moz-linear-gradient(100% 100% 90deg,#f0f0f0,#e0e0e0);
+				color:#1c96fb; }
+		input.error {
+			border-color: #ff8888;
+			-webkit-animation: errorblink 1s linear infinite;
+		}
+			@-webkit-keyframes errorblink {
+				from {
+					border-color: #cccccc;
+				}
+				50% {
+					border-color: #ff8888;
+				}
+				to {
+					border-color: #cccccc;
+				}
+			}
+
+/* FOOTER */
+#footer {
+	padding:0 15px;
+	width:300px;
+	color:#666666;
+	text-shadow:#ffffff 0px 1px 1px;
+	font-weight:bold;
+	
+	font-size:13px; }
+	#footer span {
+		float:right;
+	}
